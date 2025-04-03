@@ -1,0 +1,20 @@
+{
+	"environments":
+	{
+		"QA":
+		{
+			"url": "http://www.automationpractice.pl",
+			"Max_NUMBER_OF_ATTEMPTS" : 1
+		},
+		"DEV":
+		{
+			"url": "https://google.com",
+			"Max_NUMBER_OF_ATTEMPTS" : 3
+		},
+		"UAT":
+		{
+			"url": "https://www.bhulekh.ori.nic.in/BhulekhError.aspx",
+			"Max_NUMBER_OF_ATTEMPTS" : 3
+		}
+	}
+}
