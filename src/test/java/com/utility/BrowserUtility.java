@@ -70,6 +70,8 @@ public class BrowserUtility {
 			if (isHeadless) {
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless=new");
+				options.addArguments("--disable=gpu");
+				options.addArguments("--no-sandbox");
 				driver.set(new ChromeDriver(options));
 			} else {
 				driver.set(new ChromeDriver());
@@ -78,6 +80,8 @@ public class BrowserUtility {
 			if (isHeadless) {
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--headless=new");
+				options.addArguments("--disable=gpu");
+				options.addArguments("--no-sandbox");
 				driver.set(new EdgeDriver(options));
 			} else {
 				driver.set(new EdgeDriver());
@@ -86,6 +90,8 @@ public class BrowserUtility {
 			if (isHeadless) {
 				FirefoxOptions options = new FirefoxOptions();
 				options.addArguments("--headless=new");
+				options.addArguments("--disable=gpu");
+				options.addArguments("--no-sandbox");
 				driver.set(new FirefoxDriver(options));
 			} else {
 				driver.set(new FirefoxDriver());
