@@ -17,6 +17,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
+				<configuration>
+				  <source>11</source>
+				  <target>11</target>
+				</configuration>
 			</plugin>
 
 			<plugin>
@@ -28,12 +32,12 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-						<browser>${browser}</browser>
+						<!--<browser>${browser}</browser>
 						<isLambdaTest>${isLambdaTest}</isLambdaTest>
-						<isHeadLess>${isHeadLess}</isHeadLess>
-						<!--<browser>chrome</browser>
+						<isHeadLess>${isHeadLess}</isHeadLess>-->
+						<browser>chrome</browser>
 						<isLambdaTest>false</isLambdaTest>
-						<isHeadLess>true</isHeadLess>-->
+						<isHeadLess>true</isHeadLess>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
