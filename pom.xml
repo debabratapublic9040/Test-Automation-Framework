@@ -35,6 +35,9 @@
 						<browser>${browser}</browser>
 						<isLambdaTest>${isLambdaTest}</isLambdaTest>
 						<isHeadLess>${isHeadLess}</isHeadLess>
+						<!--<browser>chrome</browser>
+						<isLambdaTest>false</isLambdaTest>
+						<isHeadLess>true</isHeadLess>-->
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
