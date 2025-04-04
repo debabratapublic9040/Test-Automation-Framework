@@ -51,7 +51,7 @@ jobs:
       run: echo "Test Execution Completed"
 
     -name: Copy Report to gh-pages Folder
-    if: always()
+     if: always()
      
      run:
        mkdir -p public/extend-reports/
